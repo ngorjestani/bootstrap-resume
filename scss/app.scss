@@ -1,0 +1,39 @@
+.navbar {
+  position: absolute;
+}
+
+.bg-dark {
+  opacity: 0.8;
+}
+
+$primary: #284B63;
+$secondary: #EACF9D;
+$tertiary: #153243;
+$ivory: #F4F9E9;
+$orange-soda: #FE5E41;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+        "ivory": $ivory,
+        "orange-soda": $orange-soda
+);
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+@import "../bootstrap-5.1.0/scss/bootstrap";
+
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.5),
+      rgba(255,255,255,0.5)
+    ),
+    url("/../media/img/hero-img.jpg");
+  background-position: center;
+}
